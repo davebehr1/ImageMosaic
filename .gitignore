@@ -1,0 +1,5 @@
+#Ignore folders name 'images'
+images/
+
+#Ignore all .class files
+*.class
