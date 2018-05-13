@@ -1,5 +1,8 @@
 #Ignore folders name 'images'
 images/
-
+images3/
+imagesResize/
+resized/
+properties/
 #Ignore all .class files
 *.class
