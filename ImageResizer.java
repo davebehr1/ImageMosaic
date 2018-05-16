@@ -22,7 +22,7 @@ public class ImageResizer {
         this.imageLocation = location;
     }
 
-    public static void resize(String inputImagePath,
+    public void resize(String inputImagePath,
             String outputImagePath, int scaledWidth, int scaledHeight)
             throws IOException {
         // reads input image
@@ -83,7 +83,7 @@ public class ImageResizer {
             int scaledWidth = 768;
             int scaledHeight = 768;
             index ++;
-            ImageResizer.resize(file.getCanonicalPath(), outputImagePath, scaledWidth, scaledHeight);
+            resize(file.getCanonicalPath(), outputImagePath, scaledWidth, scaledHeight);
             outputImagePath = "imagesResize/";
  
         } catch (IOException ex) {
@@ -92,10 +92,7 @@ public class ImageResizer {
         }
 
      }
-     public BufferedImage getImageArray(){
-        return resizedImgs;
-     }
- 
+    
     public static void main(String[] args) {
         String inputImagePath = "portrait.jpg";
         File folder = new File("properties");

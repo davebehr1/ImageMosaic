@@ -4,5 +4,6 @@ images3/
 imagesResize/
 resized/
 properties/
+members/
 #Ignore all .class files
 *.class

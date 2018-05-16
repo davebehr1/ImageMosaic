@@ -21,6 +21,7 @@ public class ImageResizerScript{
     public String fileName = "img";
     public int numFiles =0;
     public File newfile =new File("newfile.txt");
+   
     public ArrayList<File> files;
     ImageResizerScript(){};
     ImageResizerScript(String directory, int width, int height){
@@ -31,7 +32,7 @@ public class ImageResizerScript{
         this.scaledWidth = width;
     }
 
-    public static void resize(String inputImagePath,
+    public void resize(String inputImagePath,
             String outputImagePath, int scaledWidth, int scaledHeight)
             throws IOException {
         // reads input image
@@ -90,7 +91,7 @@ public class ImageResizerScript{
             // resize to a fixed width (not proportional)
             //int scaledWidth = 768;
             //int scaledHeight = 768;
-            ImageResizer.resize(file.getCanonicalPath(), outputImagePath, scaledWidth, scaledHeight);
+            resize(file.getCanonicalPath(), outputImagePath, scaledWidth, scaledHeight);
             outputImagePath = "imagesResize/";
             ++ indexTwo;
  
