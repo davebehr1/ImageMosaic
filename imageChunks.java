@@ -335,7 +335,7 @@ public class imageChunks{
             System.out.println(map.get(i));
         }
     }
-    /*public void tournamentSelection(){
+    public void tournamentSelection(){
         for(int i =0; i < populationSize;++i){
             System.out.println(map.get(i));
             map.put(i,map.get(i) - originalImageAverage);
@@ -441,7 +441,7 @@ public class imageChunks{
 
 	public static void main(String[] args){
 
-		/*imageChunks newGen = new imageChunks(args[0], args[1], args[2], args[3]); //image directory / image.jpg / x / y
+		imageChunks newGen = new imageChunks(args[0], args[1], args[2], args[3]); //image directory / image.jpg / x / y
         int numberOfImages = 0;
 		newGen.GenImages();
         System.out.println(newGen.getWidth());
@@ -455,7 +455,7 @@ public class imageChunks{
         }
 
         newGen.getPopulationScores();
-        newGen.tournamentSelection(3);*/
+        newGen.tournamentSelection(3);
         //newGen.getPopulationScores();
 
 
@@ -467,7 +467,7 @@ public class imageChunks{
         System.out.println("Number of files: " +newResizer.getNumFiles());
         System.out.println("Number of images in Directory: " + numberOfImages);
         newGen.popInit(newResizer.getNumFiles());*/
-        int currentPopulation = 5;
+       /* int currentPopulation = 5;
         int chunks = 25;
         ArrayList<ArrayList<String>> members = new ArrayList<ArrayList<String>>();
         for(int i = 0; i < currentPopulation; ++i){
@@ -484,7 +484,7 @@ public class imageChunks{
             System.out.println(members.get(i).get(j));
             }
             System.out.println("");
-        }
+        }*/
 
       //  members.add(new ArrayList<String>());
 
